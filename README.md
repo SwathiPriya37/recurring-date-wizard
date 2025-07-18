@@ -1,73 +1,112 @@
-# Welcome to your Lovable project
+# 🗓️ Recurring Date Picker Component – React/Next.js
 
-## Project info
+A reusable and customizable recurring date picker component inspired by the **TickTick** scheduling UI. Built using **Next.js**, **Tailwind CSS**, and **Zustand** for clean state management.
 
-**URL**: https://lovable.dev/projects/14ad4f41-de64-45ea-8612-661911f87b33
+## 🔗 Live Demo
 
-## How can I edit this code?
 
-There are several ways of editing your application.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/14ad4f41-de64-45ea-8612-661911f87b33) and start prompting.
+## ✨ Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- ✅ Supports **Daily, Weekly, Monthly, and Yearly** recurrence
+- 🔁 Flexible customization:
+  - Every X days/weeks/months/years
+  - Specific weekdays (Mon, Wed, Fri, etc.)
+  - Patterns like "Second Tuesday of every month"
+- 📆 Date range selection (start date required, end date optional)
+- 🗓️ Mini calendar preview showing selected recurring dates
+- 🧠 Clean state handling using **Zustand**
+- 💅 Styled with **Tailwind CSS**
+- 🧪 Includes **unit & integration tests**
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🧱 Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **State Management**: [Zustand](https://github.com/pmndrs/zustand)
+- **Date Handling**: [date-fns](https://date-fns.org/)
+- **Testing**: [Jest](https://jestjs.io/) + [React Testing Library](https://testing-library.com/)
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🚀 Getting Started
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 1. Clone the Repository
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+git clone https://github.com/swathipriya37/recurring-date-wizard.git
+cd recurring-date-wizard
 ```
+2. Install Dependencies
+bash ```
+npm install
+# or
+yarn install
+```
+3. Start the Development Server
+```
+npm run dev
+# or
+yarn dev
+```
+Open http://localhost:3000 to view it in your browser.
 
-**Edit a file directly in GitHub**
+🧩 Component Structure
+```
+components/
+│
+├── RecurrenceSelector.tsx         # UI for Daily/Weekly/Monthly/Yearly
+├── CustomRuleInput.tsx            # Every X days/weeks/months/years
+├── WeekdaySelector.tsx            # For choosing specific weekdays
+├── PatternSelector.tsx            # e.g., "Second Tuesday of each month"
+├── DateRangePicker.tsx            # Start/End date selection
+├── CalendarPreview.tsx            # Displays recurring dates on calendar
+├── utils/                         # Date generation & helper logic
+└── store/useRecurrenceStore.ts    # Zustand store
+```
+🧪 Testing
+Run tests with:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+npm run test
+```
+## ✅ Unit Tests: Validate recurrence logic and utility functions
 
-**Use GitHub Codespaces**
+## 🔄 Integration Test: Ensures full flow from selection → preview
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📹 Loom Video Overview
+In the walkthrough, I explain:
 
-## What technologies are used for this project?
+How the recurrence logic works
 
-This project is built with:
+State structure and usage of Zustand
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Tailwind-based layout decisions
 
-## How can I deploy this project?
+How calendar preview is generated
 
-Simply open [Lovable](https://lovable.dev/projects/14ad4f41-de64-45ea-8612-661911f87b33) and click on Share -> Publish.
+Extensibility for future rules
 
-## Can I connect a custom domain to my Lovable project?
+Test strategy and coverage
 
-Yes, you can!
+▶️ Watch the Video
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+📌 Future Improvements
+Add iCal or Google Calendar export
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Add timezone support
+
+Enable saving recurrence rules
+
+Enhance accessibility with keyboard navigation
+
+🧑‍💻 Author
+Made with ❤️ by Your Name
+
+📄 License
+This project is open source and available under the MIT License.
+
