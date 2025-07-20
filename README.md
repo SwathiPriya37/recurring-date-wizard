@@ -4,14 +4,6 @@ A reusable and customizable recurring date picker component inspired by the **Ti
 
 ---
 
-## 🔗 Links
-
-- 🚀 **Live Demo**: [StackBlitz](https://stackblitz.com/edit/recurring-date-picker-demo)
-- 📂 **GitHub Repo**: [GitHub](https://github.com/yourusername/recurring-date-picker)
-- 🎥 **Loom Video Walkthrough**: [Loom Link](https://www.loom.com/share/your-loom-video-id)
-
----
-
 ## ✨ Features
 
 - ✅ Recurrence types: Daily, Weekly, Monthly, Yearly
